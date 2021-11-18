@@ -17,6 +17,11 @@ public abstract class AbstractEntity {
     @NotBlank @Size(min = 1, max = 80)
     public String name;
 
+    @Override
+    public String toString(){
+        return name;
+    }
+
     public int getId() {
         return id;
     }
